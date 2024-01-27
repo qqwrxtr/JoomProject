@@ -1,0 +1,689 @@
+
+a{
+    color: black;
+}
+
+body{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+.top__info{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.antet__end a{
+    color: gray;
+}
+
+.antet__end a:hover{
+    text-decoration: underline;
+}
+
+.antet__start , .antet__end{
+    display: flex;
+}
+
+.antet__start div , .antet__end div{
+    padding: 0px 10px;
+    font-size: 12px;
+}
+
+.antet__start select{
+    font-size: 11px;
+}
+
+.antet__end{
+    color: gray;
+}
+
+.realantet{
+    padding-top: 50px;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.logo img{
+    height: 50px;
+    width: 150px;
+}
+
+.upper__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex__start{
+    display: flex;
+}
+
+.search input{
+    height: 50px;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.button__search button{
+    background-color: orangered;
+    color: white;
+    width: 70px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.end__icons{
+    display: flex;
+    align-items: center;
+}
+
+.profile img{
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 45px;
+}
+
+.end__icons a{
+    padding: 0px 20px;
+    color: black;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+  
+  /* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 100vw;
+  padding: 8px 0;
+  background-color: #fff;
+  display: block;
+}
+  
+  /* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  display: flex;
+  transition: 0s;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+  
+  /* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.burger{
+    display: flex;
+    align-items: center;
+}
+
+.nav__menu{
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    height: 60px;
+    overflow-x: hidden;
+    margin-top: 30px;
+}
+
+.propouses {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    height: 50px;
+    column-gap: 15px;
+    row-gap: 10px;
+}
+
+.propouses a{
+    margin: 0px 10px;
+}
+
+.propouses a:hover{
+    color: orange;
+    transition:0s;
+}
+
+.burger:hover{
+    color: orange;
+    transition:0s;
+}
+
+.popuptext ul{
+    /* max-width: 1300px; */
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.popuptext ul li{
+    margin: 5px 20px;
+    color: black;
+}
+
+.popuptext ul li:hover{
+    color: orange;
+    transition: 0s;
+}
+
+.popuptext{
+    position: absolute;
+    margin-top: 5px;
+    z-index: 100;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  max-width: 1500px;
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+/* Next & previous buttons */
+.prev span, .next span{
+  cursor: pointer;
+  background-color: white;
+  border-radius: 15px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    margin-top: 170px;
+    z-index: 50;
+}
+
+.red{
+    background-color: red;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover span, .next:hover span {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+  
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.black{
+    background-color: olive;
+}
+
+.mySlides{
+    max-width: 1300px;
+    width: 100%;
+}
+
+.slideshow-container{
+    display: flex;
+    justify-content: center;
+}
+
+.flex__content{
+    margin-top: 30px;
+}
+
+.banner__content{
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.txt h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.txt p{
+    font-size: 24px;
+}
+
+#myPopup {
+    background-color: #fff;
+    height: max-content;
+}
+
+.popuptext ul a li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.popuptext ul a li{
+    display: flex;
+}
+
+
+.info_rec{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rec_product img{
+    height: 200px;
+    width: 200px;
+    border-radius: 7px;
+}
+
+.rec_product{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    height: 370px;
+    overflow: hidden;
+}
+
+.rec_img , .rec_text{
+    width: 200px
+}
+
+.rec_product a{
+    padding: 15px 5px;
+}
+
+.rec_product a:hover img{
+    transform: scale(1.05);
+}
+
+.description{
+    height: 25px;
+    overflow: hidden;
+}
+
+.reiting span{
+    color: red;
+}
+
+.sale{
+    background-color: red;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price h5{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.price p{
+    text-decoration: line-through;
+    color: gray;
+    padding-left: 15px;
+}
+
+.reiting{
+    margin-top: 10px;
+}
+
+.description{
+    margin-top: 10px;
+} 
+
+.burger{
+    cursor: pointer;
+}
+
+.content{
+    margin-bottom: 100px;
+}
+
+.container__slider2{
+    margin-top: 50px;
+}
+
+.swiper{
+    width: 100%;
+    height: 240px;
+}
+
+.swiper-slide {
+    width: 300px;
+    height: 200px;
+}
+
+.slider_content img{
+    width: 500px;
+    height: 200px;
+}
+
+.slider_content{
+    overflow: hidden;
+}
+
+.slider_text{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.slider_content h4{
+    font-size: 30px;
+}
+
+.sales{
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.car__care img{
+    max-width: 450px;
+    width: 100%;
+    height: 600px;
+}
+
+.car__care img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.container__nou{
+    max-width: 500px;
+    width: 100%;
+    height: 700px;
+}
+
+.containter__info{
+    max-width: 700px;
+    width: 100%;
+    height: 500px;
+}
+
+
+.car__care{
+    text-align: center;
+}
+
+.car__care h3{
+    font-size: 60px;
+}
+
+.car__care p{
+    font-size: 25px;
+}
+
+.infoblock img{
+    max-width: 300px;
+    width: 100%;
+}
+
+.infoblock{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infoblock a{
+    padding: 15px;
+}
+
+.infoblock a:hover img{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular_cat{
+    margin-top: 20px;
+}
+
+.cat p{
+    font-size: 25px;
+}
+
+.allprod{
+    display: flex;
+    align-items: center;
+}
+
+.info_categories a{
+    width: 200px;
+    height: 200px;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    text-align: center;
+}
+
+.info_categories img{
+    margin-bottom: 20px;
+    width: 75px;
+    height: 75px;
+}
+
+.info_categories a:hover img{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.info_categories{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.iobana{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.iobana h5{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+.iobana img{
+    width: 150px;
+    height: 150px;
+}
+
+.iobana a{
+    width: 400px;
+    height: 200px;
+    border-radius: 7px;
+}
+
+.item__country a{
+    background: rgba(184, 64, 64, 0.8);
+}
+
+.flex__info h3{
+    font-size: 19px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.links a{
+    margin: 10px 0;
+    color: gray;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.flex__info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+}
+
+.app a img{
+    margin: 10px 0;
+}
+
+@media only screen and (max-width : 1200px) {
+    /* hah nimic */
+}
+
+@media only screen and (max-width : 375px ) {
+    .rec_product{
+        width: 100%;
+        flex-wrap: nowrap;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rec_product img{
+        width: 80%;
+        height: 50%;
+    }
+    .rec_product a{
+        width: 50%;
+    }
+    .description{
+        width: 70%;
+    }
+    .sales{
+        display: flex;
+        flex-wrap: wrap;
+        height: 1500px;
+        
+    }
+    .containter__info img{
+        width: 80%;
+        height: 50%;
+        
+    }
+    .infoblock a{
+        width: 50%;
+    }
+    .container__nou{
+        transform: scale(0.8);
+    }
+    .also__categories a{
+        width: 30%;
+    }
+    .also__categories img{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width : 850px){
+    .popuptext{
+        width: 600px;
+    }
+    .popuptext ul{
+        width: 50%;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width : 473px){
+    .popuptext ul{
+        width: 25%;
+        height: 500px;
+    }
+}
